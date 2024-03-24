@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
 
       Map map = jsonDecode(data);
       String text =
-          'ขอบคุณสำหรับการส่งข้อมูล\n\n - เว็บพนัน: ${map['count']} \n - เว็บปลอมแปลง เลียนแบบ: ${map['count']} \n - เว็บข่าวมั่วซั่ว: ${map['count']} \n -เว็บเเชร์ลูกโซ่:${map['count']} \n -อื่นๆ: ${map['count']}';
+          'ขอบคุณสำหรับการส่งข้อมูล\n\n - เว็บพนัน: ${map['count']} \n - เว็บปลอมแปลง เลียนแบบ: ${map['count']} \n - เว็บข่าวมั่วซั่ว: ${map['count']} \n - เว็บเเชร์ลูกโซ่:${map['count']} \n - อื่นๆ: ${map['count']}';
       showOkDialog(context: context, title: "Success", message: text);
     } on Exception catch (e) {
       if (urlController.text == "") {
